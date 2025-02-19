@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="TOP_CENTER" hgap="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@calculator.css" vgap="12.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.HelloController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="tfInput" editable="false" stylesheets="@calculator.css" GridPane.columnSpan="4">
+            <padding>
+                <Insets bottom="12.0" left="5.0" right="5.0" top="12.0" />
+            </padding>
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btn2" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="CE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+        <Button fx:id="btn5" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="btn4" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="btn6" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="btn7" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="X" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="btn8" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Button fx:id="btn9" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Button fx:id="btn10" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Button fx:id="btn11" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text=" - " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Button fx:id="btn12" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Button fx:id="btn13" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Button fx:id="btn14" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Button fx:id="btn15" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text=" + " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Button fx:id="btn16" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+        <Button fx:id="btn17" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+        <Button fx:id="btn18" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+        <Button fx:id="btn1" alignment="CENTER" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text="C" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+        <Button fx:id="btn3" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="78.0" prefWidth="155.0" stylesheets="@calculator.css" text=" / " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    </children>
+    <padding>
+        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+    </padding>
+</GridPane>

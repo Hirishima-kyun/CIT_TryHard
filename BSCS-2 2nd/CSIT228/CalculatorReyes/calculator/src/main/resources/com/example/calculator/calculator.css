@@ -1,3 +1,7 @@
 .rounded {
+    -fx-border-radius: 24px;
+}
 
+.rounded:hover {
+    -fx-background-color: rgb(220, 220, 220);
 }
